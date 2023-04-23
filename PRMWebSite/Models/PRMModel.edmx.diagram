@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6df2ecf2389d4e9e8dc7f576a1b4f85e" Name="Diagram1">
+        <EntityTypeShape EntityType="PRMDatabaseModel.Apartment" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRMDatabaseModel.Appointment" Width="1.5" PointX="7.5" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRMDatabaseModel.Building" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRMDatabaseModel.Event" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRMDatabaseModel.Message" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRMDatabaseModel.PotentialTenant" Width="1.5" PointX="3.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRMDatabaseModel.PropertyManager" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRMDatabaseModel.PropertyOwner" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRMDatabaseModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="PRMDatabaseModel.FK_Appointments_Apartments" ManuallyRouted="false" />
+        <AssociationConnector Association="PRMDatabaseModel.FK_dbo_Apartments_dbo_Buildings_BuildingId" ManuallyRouted="false" />
+        <AssociationConnector Association="PRMDatabaseModel.FK_dbo_Appointments_dbo_PotentialTenants_TenantId" ManuallyRouted="false" />
+        <AssociationConnector Association="PRMDatabaseModel.FK_dbo_Appointments_dbo_PropertyManagers_ManagerId" ManuallyRouted="false" />
+        <AssociationConnector Association="PRMDatabaseModel.FK_dbo_Buildings_dbo_PropertyManagers_ManagerId" ManuallyRouted="false" />
+        <AssociationConnector Association="PRMDatabaseModel.FK_dbo_Events_dbo_PropertyManagers_ManagerId" ManuallyRouted="false" />
+        <AssociationConnector Association="PRMDatabaseModel.FK_dbo_Events_dbo_PropertyOwners_OwnerId" ManuallyRouted="false" />
+        <AssociationConnector Association="PRMDatabaseModel.FK_dbo_Messages_dbo_PotentialTenants_TenantId" ManuallyRouted="false" />
+        <AssociationConnector Association="PRMDatabaseModel.FK_dbo_Messages_dbo_PropertyManagers_ManagerId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
